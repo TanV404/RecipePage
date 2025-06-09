@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Young Serif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face{
+    font-family: Outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+     background-color: hsla(331, 37%, 64%, 0.301);
+     font-family: Outfit, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    padding: 20px;
+}
+
+.card{
+    width: 650px;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid none;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+#card-img{
+    width: 650px;
+    border: 1px solid none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.prep{
+    width: auto;
+    height: auto;
+    background-color: hsl(330, 100%, 98%);
+    border: 1px solid none;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#prep-text{
+    color: hsl(332, 51%, 32%);
+}
+
+strong, ul, p, li, td{
+    color: hsl(30, 10%, 34%);
+    line-height: 23px;
+}
+
+h1{
+    font-family: Young Serif;
+    color: hsl(24, 5%, 18%);
+    font-weight: 500;
+}
+
+li{
+    margin-bottom: 10px;
+    margin-left: 18px;
+    line-height: 20px;
+}
+
+h2{
+    font-family: Young Serif;
+    color: hsl(332, 51%, 32%);
+}
+
+span, ol li::marker{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+td{
+    padding: 10px 0px 10px 30px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.last{
+    border-bottom: none;
+}
+
+ol li{
+    padding-left: 20px;
+    line-height: 23px;
+}
+
+hr{
+    border: 0.5px solid  hsl(30, 18%, 87%);
+    margin: 10px 0px;
+}
+
+@media screen and (max-width:700px) {
+    .container{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .card{
+        width: 100%;
+        padding: 0px;
+    }
+    #card-img{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .content{
+        padding: 20px 30px;
+    }
+    .prep{
+        width: 88%;
+    }
+    
+}
+
